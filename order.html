@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - RiceBagGo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Place Your Order</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="order.html">Order Now</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <form id="orderForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="address">Address:</label>
+            <textarea id="address" required></textarea>
+            
+            <label for="riceType">Select Rice Type:</label>
+            <select id="riceType">
+                <option value="Basmati">Basmati Rice</option>
+                <option value="Sona Masoori">Sona Masoori Rice</option>
+                <option value="Brown Rice">Brown Rice</option>
+            </select>
+            
+            <label for="quantity">Quantity (kg):</label>
+            <input type="number" id="quantity" min="1" required>
+            
+            <label for="payment">Payment Method:</label>
+            <select id="payment">
+                <option value="COD">Cash on Delivery</option>
+                <option value="UPI">UPI Payment</option>
+            </select>
+            
+            <button type="submit">Submit Order</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
